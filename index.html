@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="プロフィールと制作物を紹介するポートフォリオサイトです。" />
+    <title>Portfolio | Profile</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell" id="home">
+      <aside class="sidebar" aria-label="サイトナビゲーション">
+        <div class="sidebar__top">
+          <a class="sidebar__brand" href="#home">PORTFOLIO</a>
+          <button class="menu-toggle" type="button" aria-label="メニューを閉じる" aria-controls="site-nav" aria-expanded="true">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+        <nav class="sidebar__nav" id="site-nav" aria-label="メインメニュー">
+          <a class="sidebar__link is-active" href="#home" aria-current="page">HOME</a>
+          <a class="sidebar__link" href="#about">ABOUT ME</a>
+          <a class="sidebar__link" href="#works">WORKS</a>
+          <a class="sidebar__link" href="#contact">CONTACT</a>
+        </nav>
+        <small class="sidebar__copyright">© 2026</small>
+      </aside>
+
+      <main class="main-content">
+        <header class="topbar">
+          <span>PROFILE / PORTFOLIO</span>
+          <a href="#contact">CONTACT ↗</a>
+        </header>
+
+        <section class="hero" aria-labelledby="hero-label">
+          <p class="hero__eyebrow" id="hero-label">HELLO, NICE TO MEET YOU</p>
+          <div class="hero__intro">
+            <p>つくることと、伝えることを大切に。</p>
+            <p>ここから、私のことを紹介します。</p>
+          </div>
+          <a class="hero__button" href="https://github.com/slime-55" target="_blank" rel="noopener noreferrer" aria-label="GitHubを開く（新しいタブ）">Github <span aria-hidden="true">→</span></a>
+
+          <div class="hero__portrait" aria-label="プロフィール写真の仮置き">
+            <img class="hero__portrait-ring" src="assets/profile-ring.svg" alt="" />
+            <img class="hero__portrait-center" src="assets/profile-center.svg" alt="" />
+            <span>PHOTO</span>
+          </div>
+          <div class="hero__role" aria-hidden="true">
+            <span>University Student</span>
+          </div>
+        </section>
+
+        <section class="works" id="works" aria-labelledby="works-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-heading__eyebrow">01 / SELECTED WORKS</p>
+              <h1 id="works-title">これまでの制作</h1>
+            </div>
+            <a href="#works-list">すべて見る <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="works__list" id="works-list">
+            <article class="work-card">
+              <div class="work-card__visual">
+                <img src="assets/work-graphic.svg" alt="" />
+              </div>
+              <div class="work-card__heading"><span>02</span><h2>UXの授業課題</h2></div>
+              <p>「誰かにとって何かが少し良くなる体験」をテーマに、UXの授業で動画を制作。周囲の情報をまとめることができる暗記カードアプリを提案</p>
+            </article>
+            <article class="work-card">
+              <div class="work-card__visual">
+                <img src="assets/work-other.svg" alt="" />
+              </div>
+              <div class="work-card__heading"><span>03</span><h2>プロフィールサイト</h2></div>
+              <p>このサイト</p>
+            </article>
+             <article class="work-card">
+              <div class="work-card__visual">
+                <img src="assets/work-other.svg" alt="" />
+              </div>
+              <div class="work-card__heading"><span>03</span><h2>コスメ管理アプリ</h2></div>
+              <p>コスメの使用状況を管理できるwebアプリを制作</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="info-section" id="about" aria-labelledby="about-title">
+          <p class="section-heading__eyebrow">02 / ABOUT ME</p>
+          <h2 id="about-title">私について</h2>
+          <p>東洋大学情報連携学部（INIAD）の2年生です。大学ではプログラミングやデータサイエンス、UXを主に学んでいます。また、基本情報技術者試験に合格しており、現在も技術的な知識やスキルの習得に取り組んでいます。<br>特に、UI/UXデザインやWebアプリケーション開発、生成AIを活用したサービス開発に興味があります。技術そのものだけでなく、ユーザーの課題を発見し、それを解決するプロダクトを企画・開発することにも関心があります。
+将来的には、プロダクトエンジニア、UXデザイナー、プロダクトマネージャー（PdM）など、ユーザー視点と技術的な知識の両方を活かせる職種を目指しています。  </p>
+        </section>
+
+        <section class="info-section info-section--contact" id="contact" aria-labelledby="contact-title">
+          <p class="section-heading__eyebrow">03 / CONTACT</p>
+          <h2 id="contact-title">お問い合わせ</h2>
+          <p>email: <a href="mailto:akemi.sakano05@gmail.com">akemi.sakano05@gmail.com</a></p>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
