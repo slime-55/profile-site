@@ -1,7 +1,7 @@
 :root {
   --color-background: #dff4f8;
-  --color-secondary: #5aafb7;
-  --color-accent: #7f392b;
+  --color-secondary: #3a7275;
+  --color-accent: #5e2a20;
   --color-ink: #173b40;
   --color-surface: #f7fcfd;
   --color-line: #b7dde2;
@@ -37,7 +37,7 @@ button { font: inherit; }
 .topbar a:hover, .section-heading a:hover { color: var(--color-accent); }
 
 .hero { position: relative; min-height: 474px; margin-top: 40px; border-radius: 26px; background: var(--color-surface); overflow: hidden; }
-.hero__eyebrow { position: absolute; top: 53px; left: 50px; margin: 0; color: var(--color-accent); font: 700 14px/1.5 Inter, Arial, sans-serif; }
+.hero__eyebrow { position: absolute; top: 130px; left: 50px; max-width: calc(100% - 320px); margin: 0; color: var(--color-accent); font: 700 36px/1.2 Inter, Arial, sans-serif; }
 .hero__intro { position: absolute; top: 282px; left: 53px; margin: 0; font-size: 19px; line-height: 1.45; }
 .hero__intro p { margin: 0; }
 .hero__button { position: absolute; top: 383px; left: 52px; display: inline-flex; width: 196px; height: 52px; align-items: center; gap: 20px; padding: 0 28px; border-radius: 26px; background: var(--color-accent); color: #fff; font-size: 16px; font-weight: 700; transition: transform .2s, background-color .2s; }
@@ -79,6 +79,10 @@ button { font: inherit; }
   .hero__role { right: 37px; }
 }
 
+@media (min-width: 801px) and (max-width: 1000px) {
+  .hero__eyebrow { font-size: 26px; }
+}
+
 @media (max-width: 950px) {
   .works__list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -99,7 +103,7 @@ button { font: inherit; }
   .topbar a { font-size: 11px; }
   .hero { display: flex; min-height: 0; flex-direction: column; align-items: flex-start; padding: 34px 28px 36px; }
   .hero__eyebrow, .hero__intro, .hero__button, .hero__portrait, .hero__role { position: static; }
-  .hero__eyebrow { font-size: 12px; }
+  .hero__eyebrow { max-width: 100%; margin-top: 44px; font-size: clamp(30px, 7vw, 42px); }
   .hero__portrait { position: relative; top: auto; right: auto; order: 1; align-self: center; margin-top: 38px; }
   .hero__role { order: 2; align-self: center; margin-top: 20px; }
   .hero__intro { order: 3; margin-top: 46px; font-size: 16px; }
